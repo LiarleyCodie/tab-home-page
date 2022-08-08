@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com/css2?family=Roboto">
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welcome</title>
+
+    <!-- SCRIPTS -->
+    <script src="src/js/popup.js" defer></script>
+    <script src="src/js/timeanddate.js" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="src/css/index.css">
+</head>
+
+<body style='background-image: url("/src/assets/background.jpg")'>
+    <div class="app">
+        <!-- ---------- NAVBAR ---------- -->
+        <nav class="navbar">
+            <a href="https://liarleycodie.github.io/content" target="_blank">
+                <span class="text">
+                    Liarley<strong>Codie</strong>
+                </span>
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <rect x="32" y="96" width="64" height="368" rx="16" ry="16"
+                            style="fill:none;stroke-linejoin:round;stroke-width:32px" />
+                        <line x1="112" y1="224" x2="240" y2="224"
+                            style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                        <line x1="112" y1="400" x2="240" y2="400"
+                            style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke-width:32px" />
+                        <rect x="112" y="160" width="128" height="304" rx="16" ry="16"
+                            style="fill:none;stroke-linejoin:round;stroke-width:32px" />
+                        <rect x="256" y="48" width="96" height="416" rx="16" ry="16"
+                            style="fill:none;stroke-linejoin:round;stroke-width:32px" />
+                        <path
+                            d="M422.46,96.11l-40.4,4.25c-11.12,1.17-19.18,11.57-17.93,23.1l34.92,321.59c1.26,11.53,11.37,20,22.49,18.84l40.4-4.25c11.12-1.17,19.18-11.57,17.93-23.1L445,115C443.69,103.42,433.58,94.94,422.46,96.11Z"
+                            style="fill:none;stroke-linejoin:round;stroke-width:32px" />
+                    </svg>
+                </div>
+            </a>
+        </nav>
+
+        <!-- ---------- CENTER CONTENT (Section) ---------- -->
+        <section class="section">
+            <div class="button-detail-popup">
+              <button id="imageButton" class="image-button">
+                <div class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M416,64H96a64.07,64.07,0,0,0-64,64V384a64.07,64.07,0,0,0,64,64H416a64.07,64.07,0,0,0,64-64V128A64.07,64.07,0,0,0,416,64Zm-80,64a48,48,0,1,1-48,48A48.05,48.05,0,0,1,336,128ZM96,416a32,32,0,0,1-32-32V316.37l94.84-84.3a48.06,48.06,0,0,1,65.8,1.9l64.95,64.81L172.37,416Zm352-32a32,32,0,0,1-32,32H217.63L339.05,294.58a47.72,47.72,0,0,1,61.64-.16L448,333.84Z" />
+                    </svg>
+                </div>
+            </button>
+              <div id="detailsPopup" class="details-popup">
+                    <div class="unsplash-logo">
+                      <img src="/src/assets/unsplash-logo.png">
+                    </div>
+                    <p class="content" id="content">
+                      Essa imagem foi obtida de <a href="#" target="_blank" >Unsplash.com</a>
+                    </p>
+                  </div>
+            </div>
+            <span class="hour" id="hour">00:00 <strong>PM</strong></span>
+            <span class="date" id="date"><strong>Month</strong> 00 0000</span>
+        </section>
+
+        <!-- ---------- FOOTER ---------- -->
+        <footer class="footer">
+            <p class="mantra"><strong>Sempre comece aos poucos.</strong> Não faça mudanças drásticas porque elas não se sustentam.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
